@@ -17,5 +17,8 @@
     "url": "https://github.com/Lorn888/notes-app/issues"
   },
   "homepage": "https://github.com/Lorn888/notes-app#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
 }
