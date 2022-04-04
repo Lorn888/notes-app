@@ -1,14 +1,21 @@
 {
   "name": "notes-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "esbuild index.js --bundle  --outfile=bundle.js --watch"
-
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lorn888/notes-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lorn888/notes-app/issues"
+  },
+  "homepage": "https://github.com/Lorn888/notes-app#readme",
+  "description": ""
 }
