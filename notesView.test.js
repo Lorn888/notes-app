@@ -34,5 +34,20 @@
      expect(document.querySelectorAll('.note').length).toBe(1)
 
    })
+   test('displays the right number of notes after calling displayNotes twice', () => {
+    document.body.innerHTML = fs.readFileSync('./index.html')
+    const model = new NotesModel
+    const view = new NotesView(model)
+    const field = document.querySelector("#note-field")
+     field.value = "new note"
+
+     const addNoteButton = document.querySelector("#button")
+
+     addNoteButton.click()
+     addNoteButton.click()
+
+     expect(document.querySelectorAll('.note').length).toBe(1)
+
+   })
  })
 
