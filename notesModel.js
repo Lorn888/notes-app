@@ -9,7 +9,7 @@ class NotesModel {
     }
 
     addNote(item) {
-        return this.notes.push(item)
+        this.notes.push(item)
     }
 
     reset() {

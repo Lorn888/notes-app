@@ -22,4 +22,5 @@ describe('notes model', ()=>{
       model.reset()
       expect(model.getNotes()).toEqual([])
     })
+    
 })

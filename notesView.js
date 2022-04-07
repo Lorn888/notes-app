@@ -2,6 +2,13 @@ class NotesViev{
   constructor(model) {
     this.model = model;
     this.mainContainerEl = document.querySelector('#main-container');
+    this.addNoteButton = document.querySelector("#button")
+    this.addNoteButton.addEventListener("click", () => {
+      let fieldEl = document.querySelector('#note-field')
+      this.model.addNote(fieldEl.value)
+      this.displayNotes()
+    
+    })
   }
   displayNotes() {
 
