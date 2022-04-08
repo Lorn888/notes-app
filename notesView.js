@@ -16,7 +16,6 @@ class NotesViev{
     // console.log(document.querySelectorAll('div')); 
     
     const notes = document.querySelectorAll('.note'); 
-    console.log(notes);
     this.mainContainerEl.innerHTML = ""
     // notes.forEach(note => {
     //   note.remove();

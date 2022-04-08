@@ -22,5 +22,11 @@ describe('notes model', ()=>{
       model.reset()
       expect(model.getNotes()).toEqual([])
     })
+
+    test('recieves an array of objects and sets their keys into the notes instance variable' , ()=> {
+      const notes = ["Learn react"]
+      model.setNotes(notes)
+      expect(model.getNotes()).toEqual(["Learn react"])
+    })
     
 })

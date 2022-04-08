@@ -1,9 +1,13 @@
 const NotesModel = require('./notesModel')
-const NotesViev = require('./notesView')
-const model = new NotesModel()
-const view = new NotesViev(model)
+const NotesView = require('./notesView')
+const NotesApi = require('./notesApi')
+const api = new NotesApi();
+const model = new NotesModel();
+const view = new NotesView(model, api);
 
-console.log(model.getNotes())
-console.log('The notes app is running')
-
+api.loadNotes((notes) => {
+  // This method is new — you'll need to add it to the model class
+  model.setNotes(notes);
+  view.displayNotes();
+});
 
